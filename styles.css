@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,
+body {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background: #a4bf00;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    margin: 2em 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 1300px;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#showcase button {
+    width: 15%;
+    padding: 20px 40px;
+    border-radius: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    background: #a4bf00;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-left: 6em;
+}
+
+button {
+    width: 30%;
+    padding: 20px 40px;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #546102;
+    border: none;
+    cursor: pointer;
+}
+
+.socials {
+    color: #fff;
+}
+
+/* navbar */
+.navbar .logo {
+    float: left;
+    font-size: 1em;
+font-weight: lighter;
+margin: 2em 4em;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: 3em;
+}
+
+/* showcase */
+
+#showcase h3 {
+    margin-top: 6em;
+    margin-left: 5em;
+}
+
+#showcase h1 {
+    font-size: 6em;
+    font-family: initial;
+    margin-left: 1em;
+}
+
+ .socials {
+    float: right;
+
+    display: flex;
+  gap: 10px;
+  margin-bottom: 6em;
+}
+
+#shop h2 {
+    margin-bottom: 2em;
+}
+
+.shop-row {
+  
+ 
+        margin: 0 auto;
+    text-align: center;
+}
+
+.shop-card {
+    display: inline-block;
+    margin-left: 40px;
+ 
+}
+
+.shop-card img {
+    width: 300px;
+    height: 350px;
+    border-radius: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* knowus */
+.madre{
+    background: url("images/about.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.madre {
+    width: 550px;
+    height: 620px;
+    float: left;
+    width: 40%;
+}
+
+
+
+.knowus-row-1 {
+    float: left;
+    width: 30%;
+}
+
+.knowus-row-2 {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+#knowus h2 {
+    font-size: 2em ;
+    font-weight: lighter;
+    margin-bottom: .9em;
+}
+
+#testimonial {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#testimonial ul {
+    display: flex;
+	gap: 10px;
+	color: #ffc038;
+	padding-bottom: 20px;
+}
+
+#testimonial h2 {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.testimonial-row {
+    height: 60vh;
+}
+
+.testimonial-card {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+    margin: 0 auto;
+    margin-left: 10px;
+    border-radius: 1em;
+    padding: 30px;
+    text-align: left;
+    background: #a5be02;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+}
+
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+   float: left;
+   margin-top: 1.5em;
+}
+
+.testimonial-card h4 {
+   margin-top: 40px;
+   margin-left: 7em;
+}
+
+#offers h2 {
+    margin: 3em 0;
+}
+
+form {
+    width: 100%;
+}
+
+form .form-control {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+#offers form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#offers h4 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+form button {
+    width: 30%;
+}
+
+#footer {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+#mainheader {
+    background: url('/images/showcase.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	/* height: 100vh; */
+	height: 100%;
+}
+
+
+
+

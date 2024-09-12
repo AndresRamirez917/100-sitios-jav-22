@@ -1,0 +1,82 @@
+.navbar .logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.navbar ul {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar ul li {
+    float: none;
+    display: inline-block;
+}
+
+#mainheader h3{
+    text-align: center;
+    margin: 0 auto;
+margin-left: 0;
+margin-top: 3em;
+}
+
+#mainheader h1 {
+    text-align: center;
+    margin: 0 auto;
+margin-left: 0;
+}
+
+
+#mainheader button {
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+
+ 
+}
+
+ #showcase .showcase-button{
+    text-align: center;
+    margin: 0 auto;
+    color: red;
+    display: block;
+    width: 30%;
+}
+
+#social  {
+   padding-top: 3em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: red;
+}
+
+.madre {
+    display: none;
+}
+
+.knowus-row-1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.knowus-row-2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-card {
+  margin-bottom: 20px;
+}
+
+.testimonial-row {
+    height: 190vh;
+}
