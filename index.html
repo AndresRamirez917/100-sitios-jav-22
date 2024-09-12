@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="/mobile.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -171,8 +173,8 @@
             <h4>sign up for the newsletter and receive 10% off your first order</h4>
             <form action="">
                 <div class="form-group">
-                    <input type="email" placeholder="enter your email"  class="form-control"/>
-                    <button>join us today</button>
+                    <input  id="email" type="email" placeholder=""  class="form-control"/>
+                    <button id="btn-enviar" >join us today</button>
                 </div>
 
             </form>
@@ -184,6 +186,6 @@
     </footer>
 
 
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
