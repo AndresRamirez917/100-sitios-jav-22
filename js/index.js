@@ -27,4 +27,66 @@ async function getData() {
     }
 }
 
+async function getDataTestimonials(){
+    const result = await fetch('https://rickandmortyapi.com/api/character');
+    const character = await result.json();
+    character.results.forEach(element => {
+        for(i = 0; i <= 3; i++){
+            if(element.id == i){
+                const testimonial_card = document.createRange().createContextualFragment(`
+                    
+                    <div class="testimonial-card">
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aliquid error iste odio vero quam officiis iusto expedita quos minus veniam nobis sint qui ratione soluta, alias corrupti! Ex, porro?</p>
+                    <img src="${element.image}" alt="" />
+                    <h4>${element.name}</h4>
+                </div>
+                                 
+                    `)
+
+                    const testimonial_row = document.querySelector('.testimonial-row');
+                    testimonial_row.append(testimonial_card);
+            }
+        }
+    })
+}
+
+const btn_validar = document.getElementById('btn-validar');
+const validar = (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email');
+    const correo = "Email"
+    if(email.value == ""){
+        swal({
+            title: `El campo ${correo} no puede estar vacío`,
+            icon: "error",
+             })
+        return false;
+    }
+    if(!mailValido(email.value)){
+        swal({
+            title: `El campo ${correo} no tiene el formato correcto`,
+            icon: "error",
+             })
+        return false;
+    }
+    swal({
+        title: `Correo enviado satisfactoriamente`,
+        icon: "success",
+         })
+    email.value = "";
+    return true;
+}
+
+const mailValido = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+btn_validar.addEventListener("click", validar)
+getDataTestimonials()
 getData()
